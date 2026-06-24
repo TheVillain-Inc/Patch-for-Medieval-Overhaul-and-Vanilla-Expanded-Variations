@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ModMetaData>
+	<name>Patch for Medieval Overhaul and VE Variations</name>
+	<author>The Villain</author>
+	<packageId>TheVillain.PatchforVEVandMO</packageId>
+	<supportedVersions>
+		<li>1.6</li>
+	</supportedVersions>
+	<description>
+Patches the Medieval Overhaul textures for some production buildings to fully overwrite Vanilla textures, this allows you to then pick from the VE Variations without loosing the MO textures. 
+	</description>
+	<modDependencies>
+		<li>
+			<packageId>dankpyon.medieval.overhaul</packageId>
+			<displayName>Medieval Overhaul</displayName>
+			<steamWorkshopUrl>https://steamcommunity.com/sharedfiles/filedetails/?id=3219596926</steamWorkshopUrl>
+		</li>
+		<li>
+			<packageId>vanillaexpanded.vtexvariations</packageId>
+			<displayName>Vanilla Textures Expanded - Variations</displayName>
+			<steamWorkshopUrl>https://steamcommunity.com/sharedfiles/filedetails/?id=2493234474</steamWorkshopUrl>
+		</li>
+	</modDependencies>
+	<loadAfter>
+		<li>vanillaexpanded.vtexvariations</li>
+		<li>dankpyon.medieval.overhaul</li>
+	</loadAfter>
+
+</ModMetaData>
