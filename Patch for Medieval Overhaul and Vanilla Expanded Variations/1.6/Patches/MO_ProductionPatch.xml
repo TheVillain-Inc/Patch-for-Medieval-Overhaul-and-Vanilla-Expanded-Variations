@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+	<!-- ========== Brewery ========== -->
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[defName="Brewery"]/comps/li[@Class="VEF.Buildings.CompProperties_RandomBuildingGraphic"]/randomGraphics</xpath>
+		<value>
+			<li>Things/Building/Production/MO_TableBrewery/MO_TableBrewery</li>		
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[defName="Brewery"]/comps/li[@Class="VEF.Buildings.CompProperties_RandomBuildingGraphic"]/optionalNames</xpath>
+		<value>
+			<li>Rustic Brewery</li>		
+		</value>
+	</Operation>
+	
+	<!-- ========== FueledStove ========== -->
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[defName="FueledStove"]/comps/li[@Class="VEF.Buildings.CompProperties_RandomBuildingGraphic"]/randomGraphics</xpath>
+		<value>
+			<li>Things/Building/Production/MO_StoveFueled/MO_TableStoveFueled</li>		
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[defName="FueledStove"]/comps/li[@Class="VEF.Buildings.CompProperties_RandomBuildingGraphic"]/optionalNames</xpath>
+		<value>
+			<li>Rustic Fueled Stove</li>		
+		</value>
+	</Operation>
+	
+	<!-- ========== HandTailoringBench ========== -->
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[defName="HandTailoringBench"]/comps/li[@Class="VEF.Buildings.CompProperties_RandomBuildingGraphic"]/randomGraphics</xpath>
+		<value>
+			<li>Things/Building/Production/MO_TableTailor/MO_TailorHand</li>		
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[defName="HandTailoringBench"]/comps/li[@Class="VEF.Buildings.CompProperties_RandomBuildingGraphic"]/optionalNames</xpath>
+		<value>
+			<li>Rustic Tailoring Bench</li>		
+		</value>
+	</Operation>
+	<!-- ========== BarrelProcessor ========== 
+ *** Texture Scaling Issues, and stuffable colour issues ***
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/ThingDef[defName="BarrelProcessor"]/comps</xpath>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>Defs/ThingDef[defName="BarrelProcessor"]</xpath>
+			<value>
+				<comps/>
+			</value>
+		</nomatch>
+	</Operation>
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[defName = "BarrelProcessor"]/comps</xpath>
+		<value>
+			<li Class="VEF.Buildings.CompProperties_RandomBuildingGraphic">
+				<randomGraphics>
+					<li>Things/Building/Production/FermentingBarrels/VFE_FermentingBarrelMetal</li>
+					<li>Things/Building/Production/FermentingBarrels/VFE_FermentingBarrelClassic</li>
+					<li>Things/Building/Production/FermentingBarrels/VFE_FermentingBarrelBright</li>
+					<li>Things/Building/Production/FermentingBarrels/VFE_FermentingBarrelBirch</li>
+					<li>Things/Building/Production/MO_FermentingBarrel/RusticFermentingBarrel</li>
+				</randomGraphics>
+				<optionalNames>
+					<li>Standard Fermenting Barrel</li>
+					<li>Metal</li>
+					<li>Classic</li>
+					<li>Bright</li>
+					<li>Birch</li>
+					<li>Rustic Fermenting Barrel</li>
+				</optionalNames>
+			</li>
+		</value>
+	</Operation>
+	-->
+</Patch>
